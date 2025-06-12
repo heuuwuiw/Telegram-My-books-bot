@@ -82,7 +82,7 @@ async def scrape_ocean_pdf(query: str) -> dict:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         welcome_message = (
-            "👋 Welcome to My Books. Here you can get any book you want as PDF.📚📚📚📚📚
+            "👋 Welcome to My Books. Here you can get any book you want as PDF 📚📚📚📚📚.
 "
             "Just type the 'book name' and I will do the rest."
         )
