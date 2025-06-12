@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-book-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8126125634:AAGaEy-7KIxEqucrlrY9VLJwXQ83dm7hQaU
