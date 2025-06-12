@@ -101,15 +101,10 @@ async def search_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         encoded_query = quote_plus(query)
         search_url = f"https://oceanofpdf.com/?s={encoded_query}"
         response_message = (
-            f"🔎 Here's your book download link:
-
-"
-            f"📚 **Book:** {query}
-"
-            f"🌐 **Link:** {search_url}
-
-"
-            f"💡 Click the link above to download for '{query}' in pdf!"
+    f"🔍 Here's your book download link:\n\n"
+    f"📚 **Book:** {query}\n"
+    f"🌐 **Link:** {search_url}\n\n"
+    f"💡 Click the link above to download for '{query}' in pdf!"
         )
         await update.message.reply_text(response_message, parse_mode='Markdown')
     except Exception as e:
